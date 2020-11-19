@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="acd5644f-2e36-4a57-827b-0c4c8383549c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ArrSumOfTwoElems" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrSumOfTwoElems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Geometry" beforeDir="false" afterPath="$PROJECT_DIR$/../Geometry" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntegerReverse" beforeDir="false" afterPath="$PROJECT_DIR$/../IntegerReverse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Access/out/production/Access/access/Acсess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Access/out/production/Access/access/Person2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Access/src/access/Acсess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Access/src/access/Person2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Alphabet/out/production/Alphabet/Alphabet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Alphabet/src/Alphabet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayFazan/out/production/ArrayFazan/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayFazan/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayListTry/out/production/ArrayListTry/Loader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayListTry/out/production/ArrayListTry/Loader$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayListTry/out/production/ArrayListTry/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ArrayListTry/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CalendarAndDates/out/production/CalendarAndDates/CalendarAndDays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CalendarAndDates/src/CalendarAndDays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CarLicensePlateGen/out/production/CarLicensePlateGen/Generator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CarLicensePlateGen/out/production/CarLicensePlateGen/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CarLicensePlateGen/out/production/CarLicensePlateGen/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CarLicensePlateGen/out/production/CarLicensePlateGen/Verify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CarLicensePlateGen/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/jar/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/out/Cat_1_jar/Cat_1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/out/production/Cat_1/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/out/production/Cat_1/ColoursOfCat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/out/production/Cat_1/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/out/production/Cat_1/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/src/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/src/ColoursOfCat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Cat_1/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Confident/out/production/Confident/Confident.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Confident/src/Confident.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Confident2/out/production/Confident2/Confident2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Confident2/src/Confident2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CrossPrint/out/production/CrossPrint/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CrossPrint/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CrossPrintNotMy/out/production/CrossPrintNotMy/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/CrossPrintNotMy/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/EmailTrueList/out/production/EmailTrueList/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/EmailTrueList/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/EnglishTextSplit/out/production/EnglishTextSplit/EnglishTextSplit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/EnglishTextSplit/src/EnglishTextSplit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/out/production/Extend/Extend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/out/production/Extend/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/out/production/Extend/Programmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/out/production/Extend/Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/src/Extend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/src/Programmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extend/src/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extnd/out/production/Extnd/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extnd/out/production/Extnd/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extnd/out/production/Extnd/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Extnd/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HomeWork41/out/production/HomeWork41/AdditionalHW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HomeWork41/out/production/HomeWork41/HWAdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HomeWork41/src/AdditionalHW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Hospital/out/production/Hospital/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Hospital/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HshMapTry/out/production/HshMapTry/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HshMapTry/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HumAid/out/production/HumAid/HumAid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/HumAid/src/HumAid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/out/production/Interfaces/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/out/production/Interfaces/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/out/production/Interfaces/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/out/production/Interfaces/DrawShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/out/production/Interfaces/Interfaces.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/src/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/src/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/src/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/src/DrawShape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces/src/Interfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/A$NestedIF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/AnotherClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/Callback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/Incomplete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/out/production/Interfaces2/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/src/Callback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Interfaces2/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/out/production/InterfacesExtend/IfExt1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/out/production/InterfacesExtend/IfExt2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/out/production/InterfacesExtend/InterfacesExtend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/out/production/InterfacesExtend/MyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/src/IfExt1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/src/IfExt2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/InterfacesExtend/src/InterfacesExtend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/LFMName2/out/production/LFMName2/LFMName2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/LFMName2/src/LFMName2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/LastFirstMiddleName/out/production/LastFirstMiddleName/LastFirstMiddleName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/LastFirstMiddleName/src/LastFirstMiddleName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/MinMaxValueHW/out/production/MinMaxValueHW/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/MinMaxValueHW/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PeregruzSuper/out/production/PeregruzSuper/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PeregruzSuper/out/production/PeregruzSuper/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PeregruzSuper/out/production/PeregruzSuper/Override.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PeregruzSuper/src/Override.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook/out/production/PhoneBook/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook/out/production/PhoneBook/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook2/out/production/PhoneBook2/AddAndVerify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook2/out/production/PhoneBook2/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook2/out/production/PhoneBook2/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneBook2/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneNumbers/out/production/PhoneNumbers/PhoneNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/PhoneNumbers/src/PhoneNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Probe/out/production/Probe/Ideone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Probe/src/Ideone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/out/production/RoadController/RoadController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/out/production/RoadController/core/Camera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/out/production/RoadController/core/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/out/production/RoadController/core/WeightMeter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/src/RoadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/src/core/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/RoadController_test/src/core/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Salary/out/production/Salary/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/Salary/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/out/production/StackRlz/DynStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/out/production/StackRlz/FixedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/out/production/StackRlz/IntStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/out/production/StackRlz/StackRlz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/src/IntStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StackRlz/src/StackRlz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StrExperiment2/out/production/StrExperiment2/StrExperiment2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/StrExperiment2/src/StrExperiment2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/SubClasses/out/production/SubClasses/Firm$Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/SubClasses/out/production/SubClasses/Firm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/SubClasses/out/production/SubClasses/SubClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/SubClasses/src/Firm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/SubClasses/src/SubClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TODO/out/production/TODO/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TODO/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TasksProbe/out/production/TasksProbe/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TasksProbe/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TestAirport/lib/airport-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TestAirport/out/production/TestAirport/TestAirport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/TestAirport/src/TestAirport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ToDoList/out/production/ToDoList/ToDoList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/ToDoList/src/ToDoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/cyclesTest/out/production/cyclesTest/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/cyclesTest/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/dWTest/out/production/dWTest/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/dWTest/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/emailVALID/out/production/emailVALID/EmailList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/emailVALID/out/production/emailVALID/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/emailVALID/out/production/emailVALID/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/emailVALID/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/izStroki/out/production/izStroki/Str.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/izStroki/src/Str.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/META-INF/Programs.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/Extend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/Method.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/Programmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/out/production/Programs/extend/probeClasses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/src/extend/Method.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/src/extend/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/src/extend/Programmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/src/extend/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/src/extend/probeClasses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/test/out/production/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/test/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/testRusakov/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/testTreeMap/out/production/testTreeMap/AddAndVerify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/testTreeMap/out/production/testTreeMap/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/testTreeMap/out/production/testTreeMap/UserInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProgSklbxAndOthers/testTreeMap/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programs/ProgSklbxAndOthers" beforeDir="false" afterPath="$PROJECT_DIR$/../Programs/ProgSklbxAndOthers" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1gdNHTjSReAQbIzRDt7omv8YPZc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="ForTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ForTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.sum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ForTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
+      <option name="METHOD_NAME" value="sum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.TestRunner.sum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="acd5644f-2e36-4a57-827b-0c4c8383549c" name="Default Changelist" comment="" />
+      <created>1598440422961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598440422961</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1598441064864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598441064864</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test переименовал">
+      <created>1598441606499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598441606499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test исправил">
+      <created>1598442000573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598442000573</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test вроде исправил">
+      <created>1598443151994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598443151994</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ошибка">
+      <created>1598444351449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598444351449</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test переименовал" />
+    <MESSAGE value="test исправил" />
+    <MESSAGE value="test вроде исправил" />
+    <MESSAGE value="ошибка" />
+    <option name="LAST_COMMIT_MESSAGE" value="ошибка" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="866" y="356" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598441261090">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="866" y="356" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598441261090" />
+    <state x="907" y="258" key="CommitChangelistDialog2" timestamp="1598444350595">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="907" y="258" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1598444350595" />
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom" timestamp="1598444340380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="396" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1598444340380" />
+    <state width="2516" height="396" key="GridCell.Tab.0.center" timestamp="1598444340380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="396" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1598444340380" />
+    <state width="2516" height="396" key="GridCell.Tab.0.left" timestamp="1598444340380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="396" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1598444340380" />
+    <state width="2516" height="396" key="GridCell.Tab.0.right" timestamp="1598444340380">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="396" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1598444340380" />
+    <state width="2516" height="486" key="GridCell.Tab.1.bottom" timestamp="1598440994102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="486" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1598440994102" />
+    <state width="2516" height="486" key="GridCell.Tab.1.center" timestamp="1598440994102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="486" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1598440994102" />
+    <state width="2516" height="486" key="GridCell.Tab.1.left" timestamp="1598440994102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="486" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1598440994102" />
+    <state width="2516" height="486" key="GridCell.Tab.1.right" timestamp="1598440994102">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2516" height="486" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1598440994102" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1598444356565">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1598444356565" />
+    <state x="985" y="590" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1598440712389">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="985" y="590" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400@0.0.2560.1400" timestamp="1598440712389" />
+    <state x="1051" y="493" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1598444156884">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="493" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598444156884" />
+  </component>
+</project>
