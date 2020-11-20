@@ -1,11 +1,16 @@
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 public class TyresSQLClient {
+
+
     public static void main(String args[]) {
     try {
         Input.createTables();
 
-        Input.fulfillCustomers(1, "Alexey", "+79877897887", 15);
-        Input.fulfillCustomers(2, "Irina", "+79502581779", 5);
-        Input.fulfillCustomers(3, "Sergey", "+79264561937", 0);
+        Input.fulfillCustomers(1, "Alexey", "+79877897887", "aaa",15);
+        Input.fulfillCustomers(2, "Irina", "+79502581779", "aaa",5);
+        Input.fulfillCustomers(3, "Sergey", "+79264561937", "aaa",7);
 
         Input.fulfillTyres(1, 75, 275, 21, "NOKIAN", "all seasons", 75000);
         Input.fulfillTyres(2, 55, 230, 16, "BRIDGESTONE", "winter", 50000);

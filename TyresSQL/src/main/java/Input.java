@@ -20,6 +20,7 @@ public class Input {
                 "(id INTEGER PRIMARY KEY, " +
                 "name VARCHAR(120) NOT NULL, " +
                 "phone VARCHAR(20) NOT NULL UNIQUE, " +
+                "password VARCHAR(20) NOT NULL, "+
                 "discount INTEGER NOT NULL); " +
 
                 "CREATE TABLE \"Tyres\" " +
@@ -46,7 +47,7 @@ public class Input {
 
     }
 
-    public static void fulfillCustomers(int id, String name, String phone, int discount) throws ClassNotFoundException, SQLException {
+    public static void fulfillCustomers(int id, String name, String phone, String password, int discount) throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager
                 .getConnection("jdbc:postgresql://localhost:5432/TyresShop",
@@ -54,8 +55,8 @@ public class Input {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        String sql = "INSERT INTO \"Customers\" (ID,NAME,PHONE,DISCOUNT) "
-                + "VALUES (" + id + ", '" + name + "', '" + phone + "', " + discount + ");";
+        String sql = "INSERT INTO \"Customers\" (ID,NAME,PHONE,PASSWORD,DISCOUNT) "
+                + "VALUES (" + id + ", '" + name + "', '" + phone + "', '" + password + "', " + discount + ");";
         statement.executeUpdate(sql);
         connection.commit();
 
