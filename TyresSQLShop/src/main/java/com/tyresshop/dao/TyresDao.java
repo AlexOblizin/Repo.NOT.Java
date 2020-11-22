@@ -7,7 +7,8 @@ import java.sql.SQLException;
 
 public interface TyresDao {
 
-    Tyres findByIdTyres(String idTyres) throws SQLException;
+    Tyres findByIdTyres(int idTyres) throws SQLException;
+
 
     Boolean save(Tyres tyres) throws IOException;
 

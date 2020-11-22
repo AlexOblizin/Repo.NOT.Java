@@ -9,6 +9,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TransactionDaoImpl implements TransactionDao {
     ConnectionManager cm = new ConnectionManager();
@@ -18,11 +20,40 @@ public class TransactionDaoImpl implements TransactionDao {
     }
 
     @Override
-    public Transaction findByCustomerId(int customerIdent) throws SQLException {
-        Transaction transaction = null;
+    public List<Transaction> findByCustomerId(int customerIdent) throws SQLException {
+        List<Transaction> result = new ArrayList<>();
         if (con != null) {
             PreparedStatement pr = con.prepareStatement("SELECT * FROM \"Transactions\" where CUSTOMERID=?");
             pr.setInt(1, customerIdent);
+            ResultSet resultSet = pr.executeQuery();//return sql result
+
+            while (resultSet.next()) {
+
+                int id = resultSet.getInt("id");
+                int customerId = resultSet.getInt("customerId");
+                int tyresId = resultSet.getInt("tyresId");
+                int quantity = resultSet.getInt("quantity");
+                boolean installation = resultSet.getBoolean("installation");
+                int sum = resultSet.getInt("sum");
+
+
+
+                Transaction transaction = new Transaction(id, customerId, tyresId, quantity, installation, sum);
+                result.add(transaction);
+
+            }
+            pr.close();
+            con.close();
+        }
+        return result;
+
+    }
+    @Override
+    public Transaction findById(int ident) throws SQLException {
+        Transaction tranz = null;
+        if (con != null) {
+            PreparedStatement pr = con.prepareStatement("SELECT * FROM \"Transactions\" where CUSTOMERID=?");
+            pr.setInt(1, ident);
             ResultSet resultSet = pr.executeQuery();//return sql result
 
             if (resultSet.next()) {
@@ -34,17 +65,13 @@ public class TransactionDaoImpl implements TransactionDao {
                 boolean installation = resultSet.getBoolean("installation");
                 int sum = resultSet.getInt("sum");
 
-
-                transaction =
-                        new Transaction(id, customerId, tyresId, quantity, installation, sum);
-
-
-                return transaction;
+                tranz = new Transaction(id, customerId, tyresId, quantity, installation, sum);
+                return tranz;
             }
             pr.close();
             con.close();
         }
-        return transaction;
+        return tranz;
 
     }
 

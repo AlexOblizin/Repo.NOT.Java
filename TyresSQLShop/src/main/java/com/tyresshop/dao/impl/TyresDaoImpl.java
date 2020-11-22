@@ -19,11 +19,11 @@ public class TyresDaoImpl implements TyresDao {
     }
 
     @Override
-    public Tyres findByIdTyres(String idTyres) throws SQLException {
+    public Tyres findByIdTyres(int idTyres) throws SQLException {
         Tyres tyres = null;
         if (con != null) {
             PreparedStatement pr = con.prepareStatement("SELECT * FROM \"Tyres\" where ID=?");
-            pr.setString(1, idTyres);
+            pr.setInt(1, idTyres);
             ResultSet resultSet = pr.executeQuery();//return sql result
 
             if (resultSet.next()) {
