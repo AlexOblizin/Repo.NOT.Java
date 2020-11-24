@@ -3,7 +3,6 @@ package com.tyresshop.dao.impl;
 import com.tyresshop.ConnectionManager;
 import com.tyresshop.dao.TyresDao;
 import com.tyresshop.entity.Tyres;
-import org.springframework.util.DigestUtils;
 
 import java.io.IOException;
 import java.sql.Connection;

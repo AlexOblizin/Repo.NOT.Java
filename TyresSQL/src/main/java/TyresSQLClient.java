@@ -8,21 +8,21 @@ public class TyresSQLClient {
     try {
         Input.createTables();
 
-        Input.fulfillCustomers(1, "Alexey", "+79877897887", "aaa",15);
-        Input.fulfillCustomers(2, "Irina", "+79502581779", "aaa",5);
-        Input.fulfillCustomers(3, "Sergey", "+79264561937", "aaa",7);
+        Input.fulfillCustomers("Alexey", "+79877897887", "sss",15);
+        Input.fulfillCustomers("Irina", "+79502581779", "sss",5);
+        Input.fulfillCustomers("Sergey", "+79264561937", "sss",7);
 
-        Input.fulfillTyres(1, 75, 275, 21, "NOKIAN", "all seasons", 75000);
-        Input.fulfillTyres(2, 55, 230, 16, "BRIDGESTONE", "winter", 50000);
-        Input.fulfillTyres(3, 60, 255, 17, "MICHELIN", "summer", 60000);
+        Input.fulfillTyres(75, 275, 21, "NOKIAN", "all seasons", 75000);
+        Input.fulfillTyres(55, 230, 16, "BRIDGESTONE", "winter", 50000);
+        Input.fulfillTyres(60, 255, 17, "MICHELIN", "summer", 60000);
 
-        Input.transactions(1,1,2,4,"yes");
-        Input.transactions(2,2,1,4,"no");
-        Input.transactions(3,3,3,4,"yes");
+        Input.transactions(1,2,4,"yes");
+        Input.transactions(2,1,4,"no");
+        Input.transactions(3,3,4,"yes");
 
-        Input.transactions(4,1,2,2,"no");
-        Input.transactions(5,2,1,6,"yes");
-        Input.transactions(6,3,3,8,"no");
+        Input.transactions(1,2,2,"no");
+        Input.transactions(2,1,6,"yes");
+        Input.transactions(3,3,8,"no");
 
 
         while (true) {

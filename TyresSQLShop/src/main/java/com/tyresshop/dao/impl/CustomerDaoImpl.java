@@ -20,22 +20,19 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public Customer findByName(String login) throws SQLException {
+    public Customer findByName(String name) throws SQLException {
         Customer customer = null;
         if (con != null) {
             PreparedStatement pr = con.prepareStatement("SELECT * FROM \"Customers\" where NAME=?");
-            pr.setString(1, login);
+            pr.setString(1, name);
             ResultSet resultSet = pr.executeQuery();//return sql result
 
             if (resultSet.next()) {
 
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
                 String phone = resultSet.getString("phone");
-                String password = resultSet.getString("pasword");
-                int discount = resultSet.getInt("discount");
+                String password = resultSet.getString("password");
 
-                customer = new Customer(id, name, phone, password, discount);
+                customer = new Customer(name, phone, password, 0);
 
 
                 return customer;
@@ -44,6 +41,25 @@ public class CustomerDaoImpl implements CustomerDao {
             con.close();
         }
         return customer;
+
+    }
+    public int getIdByName(String name) throws SQLException {
+        if (con != null) {
+            PreparedStatement pr = con.prepareStatement("SELECT ID FROM \"Customers\" where NAME=?");
+            pr.setString(1, name);
+            ResultSet resultSet = pr.executeQuery();//return sql result
+
+            if (resultSet.next()) {
+
+                int id = resultSet.getInt("id");
+
+
+                return id;
+            }
+            pr.close();
+            con.close();
+        }
+        return -1;
 
     }
 

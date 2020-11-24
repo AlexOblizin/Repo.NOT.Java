@@ -17,14 +17,14 @@ public class Input {
 
         Statement statement = connection.createStatement();
         String sql = "CREATE TABLE \"Customers\" " +
-                "(id INTEGER PRIMARY KEY, " +
+                "(id SERIAL PRIMARY KEY NOT NULL, " +
                 "name VARCHAR(120) NOT NULL, " +
                 "phone VARCHAR(20) NOT NULL UNIQUE, " +
                 "password VARCHAR(20) NOT NULL, "+
                 "discount INTEGER NOT NULL); " +
 
                 "CREATE TABLE \"Tyres\" " +
-                "(id INTEGER PRIMARY KEY, " +
+                "(id SERIAL PRIMARY KEY, " +
                 "heigth INTEGER NOT NULL, " +
                 "width INTEGER NOT NULL, " +
                 "radius INTEGER NOT NULL, " +
@@ -33,7 +33,7 @@ public class Input {
                 "price INTEGER NOT NULL); " +
 
                 "CREATE TABLE \"Transactions\" " +
-                "(id INTEGER PRIMARY KEY NOT NULL, " +
+                "(id SERIAL PRIMARY KEY NOT NULL, " +
                 "customerId INTEGER NOT NULL, " +
                 "tyresId INTEGER NOT NULL, " +
                 "quantity INTEGER NOT NULL, " +
@@ -47,7 +47,7 @@ public class Input {
 
     }
 
-    public static void fulfillCustomers(int id, String name, String phone, String password, int discount) throws ClassNotFoundException, SQLException {
+    public static void fulfillCustomers(String name, String phone, String password, int discount) throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager
                 .getConnection("jdbc:postgresql://localhost:5432/TyresShop",
@@ -55,14 +55,14 @@ public class Input {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        String sql = "INSERT INTO \"Customers\" (ID,NAME,PHONE,PASSWORD,DISCOUNT) "
-                + "VALUES (" + id + ", '" + name + "', '" + phone + "', '" + password + "', " + discount + ");";
+        String sql = "INSERT INTO \"Customers\" (NAME,PHONE,PASSWORD,DISCOUNT) "
+                + "VALUES ('" + name + "', '" + phone + "', '" + password + "', " + discount + ");";
         statement.executeUpdate(sql);
         connection.commit();
 
     }
 
-    public static void fulfillTyres(int id, int heigth, int width, int radius, String model, String type, int price)
+    public static void fulfillTyres(int heigth, int width, int radius, String model, String type, int price)
             throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager
@@ -71,14 +71,14 @@ public class Input {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        String sql = "INSERT INTO \"Tyres\" (ID,HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) "
-                + "VALUES (" + id + ", " + heigth + ", " + width + ", " + radius + ", '" + model + "', '" + type + "', " + price + ");";
+        String sql = "INSERT INTO \"Tyres\" (HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) "
+                + "VALUES (" + heigth + ", " + width + ", " + radius + ", '" + model + "', '" + type + "', " + price + ");";
         statement.executeUpdate(sql);
         connection.commit();
 
     }
 
-    public static void transactions(int id, int customerId, int tyresId, int quantity, String answer) throws ClassNotFoundException, SQLException {
+    public static void transactions(int customerId, int tyresId, int quantity, String answer) throws ClassNotFoundException, SQLException {
         boolean install = "yes".equals(answer);
         int discount = 0;
         int price = 0;
@@ -116,8 +116,8 @@ public class Input {
             sum += (INSTALLATION - (INSTALLATION / 100) * discount);
         }
 
-        String sql = "INSERT INTO \"Transactions\" (ID,CUSTOMERID,TYRESID,QUANTITY,INSTALLATION,SUM) "
-                + "VALUES (" + id + ", " + customerId + ", " + tyresId + ", " + quantity + ", " + install + ", " + sum + ");";
+        String sql = "INSERT INTO \"Transactions\" (CUSTOMERID,TYRESID,QUANTITY,INSTALLATION,SUM) "
+                + "VALUES (" + customerId + ", " + tyresId + ", " + quantity + ", " + install + ", " + sum + ");";
         statement.executeUpdate(sql);
         connection.commit();
     }

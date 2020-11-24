@@ -12,8 +12,7 @@ public class Customer {
     private int discount;
 
 
-    public Customer(int id, String name, String phone, String password, int discount) {
-        this.id = id;
+    public Customer(String name, String phone, String password, int discount) {
         this.name = name;
         this.phone = phone;
         this.password = password;
