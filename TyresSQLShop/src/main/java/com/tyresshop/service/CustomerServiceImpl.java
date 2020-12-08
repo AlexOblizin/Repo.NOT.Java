@@ -2,6 +2,7 @@ package com.tyresshop.service;
 
 import com.tyresshop.dao.impl.CustomerDaoImpl;
 import com.tyresshop.entity.Customer;
+import org.springframework.util.DigestUtils;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -22,6 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
             return "No password entered";
         }
         if (findCustomer != null) {
+            pass = DigestUtils.md5DigestAsHex(pass.getBytes());
             if ((pass.equals(findCustomer.getPassword()))) {
                 return "Ok! Customer iD is: " + customerDao.getIdByName(name);
             }

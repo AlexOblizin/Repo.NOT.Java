@@ -15,7 +15,7 @@ public class ConnectionManager {
 
     public Connection getConnection() throws IOException {
 
-        fileInputStream = new FileInputStream("src/main/resources/application.properties");
+        fileInputStream = new FileInputStream("src/main/resources/application.yaml");
         property.load(fileInputStream);
 
         Connection connection = null;

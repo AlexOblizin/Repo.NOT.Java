@@ -43,7 +43,7 @@ public class Output {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"Customers\" ORDER BY ID ASC;");
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"customers\" ORDER BY ID ASC;");
         while (resultSet.next()) {
             int id = resultSet.getInt("id");
             String name = resultSet.getString("name");
@@ -65,7 +65,7 @@ public class Output {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"Tyres\" ORDER BY ID ASC;");
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"tyres\" ORDER BY ID ASC;");
         while (resultSet.next()) {
             int id = resultSet.getInt("id");
             int heigth = resultSet.getInt("heigth");
@@ -94,7 +94,7 @@ public class Output {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"Transactions\" ORDER BY ID ASC;");
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM \"transactions\" ORDER BY ID ASC;");
         while (resultSet.next()) {
             int id = resultSet.getInt("id");
             int customerId = resultSet.getInt("customerId");

@@ -70,12 +70,11 @@ public class CustomerDaoImpl implements CustomerDao {
         Connection con = cm.getConnection();
         if (con != null) {
             try {
-                PreparedStatement pr = con.prepareStatement("INSERT INTO \"Customers\" (ID,NAME,PHONE,PASSWORD,DISCOUNT) VALUES (?,?,?,?,?)");
-                pr.setInt(1, customer.getId());
-                pr.setString(2, customer.getName());
-                pr.setString(3, customer.getPhone());
-                pr.setString(4, DigestUtils.md5DigestAsHex((customer.getPassword()).getBytes()));
-                pr.setInt(5, customer.getDiscount());
+                PreparedStatement pr = con.prepareStatement("INSERT INTO \"Customers\" (NAME,PHONE,PASSWORD,DISCOUNT) VALUES (?,?,?,?)");
+                pr.setString(1, customer.getName());
+                pr.setString(2, customer.getPhone());
+                pr.setString(3, DigestUtils.md5DigestAsHex((customer.getPassword()).getBytes()));
+                pr.setInt(4, customer.getDiscount());
 
                 pr.executeUpdate();
                 pr.close();

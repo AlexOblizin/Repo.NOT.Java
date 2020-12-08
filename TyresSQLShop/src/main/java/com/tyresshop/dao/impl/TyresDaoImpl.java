@@ -27,7 +27,6 @@ public class TyresDaoImpl implements TyresDao {
 
             if (resultSet.next()) {
 
-                int id = resultSet.getInt("id");
                 int heigth = resultSet.getInt("heigth");
                 int width = resultSet.getInt("width");
                 int radius = resultSet.getInt("radius");
@@ -35,7 +34,7 @@ public class TyresDaoImpl implements TyresDao {
                 String type = resultSet.getString("type");
                 int price = resultSet.getInt("price");
 
-                tyres = new Tyres(id, heigth, width, radius, model, type, price);
+                tyres = new Tyres(heigth, width, radius, model, type, price);
 
 
                 return tyres;
@@ -56,14 +55,13 @@ public class TyresDaoImpl implements TyresDao {
             try {
                 PreparedStatement pr =
                         con.prepareStatement("INSERT INTO \"Customers\" " +
-                                "(ID,HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) VALUES (?,?,?,?,?,?,?)");
-                pr.setInt(1, tyres.getId());
-                pr.setInt(2, tyres.getHeigth());
-                pr.setInt(3, tyres.getWidth());
-                pr.setInt(4, tyres.getRadius());
-                pr.setString(5, tyres.getModel());
-                pr.setString(6, tyres.getType());
-                pr.setInt(7, tyres.getPrice());
+                                "(ID,HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) VALUES (?,?,?,?,?,?)");
+                pr.setInt(1, tyres.getHeigth());
+                pr.setInt(2, tyres.getWidth());
+                pr.setInt(3, tyres.getRadius());
+                pr.setString(4, tyres.getModel());
+                pr.setString(5, tyres.getType());
+                pr.setInt(6, tyres.getPrice());
 
                 pr.executeUpdate();
                 pr.close();

@@ -16,31 +16,31 @@ public class Input {
         System.out.println("Opened database successfully");
 
         Statement statement = connection.createStatement();
-        String sql = "CREATE TABLE \"Customers\" " +
+        String sql = "CREATE TABLE \"customers\" " +
                 "(id SERIAL PRIMARY KEY NOT NULL, " +
-                "name VARCHAR(120) NOT NULL, " +
-                "phone VARCHAR(20) NOT NULL UNIQUE, " +
-                "password VARCHAR(20) NOT NULL, "+
+                "name VARCHAR(255) NOT NULL, " +
+                "phone VARCHAR(255) NOT NULL UNIQUE, " +
+                "password VARCHAR(255) NOT NULL, "+
                 "discount INTEGER NOT NULL); " +
 
-                "CREATE TABLE \"Tyres\" " +
+                "CREATE TABLE \"tyres\" " +
                 "(id SERIAL PRIMARY KEY, " +
                 "heigth INTEGER NOT NULL, " +
                 "width INTEGER NOT NULL, " +
                 "radius INTEGER NOT NULL, " +
                 "model VARCHAR(255) NOT NULL, " +
-                "type VARCHAR(100) NOT NULL, " +
+                "type VARCHAR(255) NOT NULL, " +
                 "price INTEGER NOT NULL); " +
 
-                "CREATE TABLE \"Transactions\" " +
+                "CREATE TABLE \"transactions\" " +
                 "(id SERIAL PRIMARY KEY NOT NULL, " +
                 "customerId INTEGER NOT NULL, " +
                 "tyresId INTEGER NOT NULL, " +
                 "quantity INTEGER NOT NULL, " +
                 "installation BOOLEAN DEFAULT FALSE, " +
                 "sum INTEGER NOT NULL, " +
-                "FOREIGN KEY (customerId) REFERENCES \"Customers\" (id), " +
-                "FOREIGN KEY (tyresId) REFERENCES \"Tyres\" (id));";
+                "FOREIGN KEY (customerId) REFERENCES \"customers\" (id), " +
+                "FOREIGN KEY (tyresId) REFERENCES \"tyres\" (id));";
 
         statement.executeUpdate(sql);
         connection.commit();
@@ -55,7 +55,7 @@ public class Input {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        String sql = "INSERT INTO \"Customers\" (NAME,PHONE,PASSWORD,DISCOUNT) "
+        String sql = "INSERT INTO \"customers\" (NAME,PHONE,PASSWORD,DISCOUNT) "
                 + "VALUES ('" + name + "', '" + phone + "', '" + password + "', " + discount + ");";
         statement.executeUpdate(sql);
         connection.commit();
@@ -71,7 +71,7 @@ public class Input {
         connection.setAutoCommit(false);
 
         Statement statement = connection.createStatement();
-        String sql = "INSERT INTO \"Tyres\" (HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) "
+        String sql = "INSERT INTO \"tyres\" (HEIGTH,WIDTH,RADIUS,MODEL,TYPE,PRICE) "
                 + "VALUES (" + heigth + ", " + width + ", " + radius + ", '" + model + "', '" + type + "', " + price + ");";
         statement.executeUpdate(sql);
         connection.commit();
@@ -92,11 +92,11 @@ public class Input {
 
         Statement statement = connection.createStatement();
 
-        ResultSet resultSetCustomerId = statement.executeQuery("SELECT DISCOUNT FROM \"Customers\" WHERE ID = " + customerId + ";");
+        ResultSet resultSetCustomerId = statement.executeQuery("SELECT DISCOUNT FROM \"customers\" WHERE ID = " + customerId + ";");
         while (resultSetCustomerId.next()) {
             discount = resultSetCustomerId.getInt("discount");
         }
-        ResultSet resultSetTyresId = statement.executeQuery("SELECT PRICE FROM \"Tyres\" WHERE ID = " + tyresId + ";");
+        ResultSet resultSetTyresId = statement.executeQuery("SELECT PRICE FROM \"tyres\" WHERE ID = " + tyresId + ";");
         while (resultSetTyresId.next()) {
             price = resultSetTyresId.getInt("price");
 
@@ -116,7 +116,7 @@ public class Input {
             sum += (INSTALLATION - (INSTALLATION / 100) * discount);
         }
 
-        String sql = "INSERT INTO \"Transactions\" (CUSTOMERID,TYRESID,QUANTITY,INSTALLATION,SUM) "
+        String sql = "INSERT INTO \"transactions\" (CUSTOMERID,TYRESID,QUANTITY,INSTALLATION,SUM) "
                 + "VALUES (" + customerId + ", " + tyresId + ", " + quantity + ", " + install + ", " + sum + ");";
         statement.executeUpdate(sql);
         connection.commit();

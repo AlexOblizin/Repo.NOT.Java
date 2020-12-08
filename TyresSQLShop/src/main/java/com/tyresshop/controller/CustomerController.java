@@ -13,6 +13,7 @@ import java.sql.SQLException;
 
 
 @RestController
+@RequestMapping("/customers")
 public class CustomerController {
     CustomerServiceImpl customerService = new CustomerServiceImpl();
 

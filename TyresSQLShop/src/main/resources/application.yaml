@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/TyresShop
+    username: postgres
+    password: mypass
+
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        #format_sql: true
+        #        show_sql: true
+        #use_sql_comments: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
