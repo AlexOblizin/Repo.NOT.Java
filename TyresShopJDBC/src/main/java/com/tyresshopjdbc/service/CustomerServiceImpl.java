@@ -16,15 +16,15 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     @Override
-    public String login(String login, String password) throws SQLException {
-        Customer findCustomer = customerDao.findByName(login);
+    public String login(String name, String password) throws SQLException {
+        Customer findCustomer = customerDao.findByName(name);
         if (password == null) {
             return "no password entered!";
         }
         if (findCustomer != null){
             password = DigestUtils.md5DigestAsHex(password.getBytes());
             if (password.equals(findCustomer.getPassword())) {
-                return "OK! Customer ID is: " + customerDao.findByName(login);
+                return "OK! Customer ID is: " + customerDao.getIdByName(name);
             }
         }
 

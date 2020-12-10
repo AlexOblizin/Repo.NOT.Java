@@ -39,8 +39,7 @@ public class CustomerDaoImpl implements CustomerDao {
 
                 return new Customer(name, phone, password, discount);
             }
-            preparedStatement.close();
-            connection.close();
+
         }
         return null;
     }
@@ -92,8 +91,7 @@ public class CustomerDaoImpl implements CustomerDao {
                 return id;
 
             }
-            preparedStatement.close();
-            connection.close();
+
         }
         return -1;
     }

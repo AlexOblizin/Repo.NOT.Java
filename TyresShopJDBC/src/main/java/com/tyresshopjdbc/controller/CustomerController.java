@@ -13,10 +13,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 @RestController
-@RequestMapping("/customer")
 public class CustomerController {
 
-    CustomerServiceImpl customerService = new CustomerServiceImpl();
+    CustomerService customerService = new CustomerServiceImpl();
 
     public CustomerController() throws IOException {
     }
@@ -29,7 +28,7 @@ public class CustomerController {
         return modelAndView;
     }
 
-    @RequestMapping("/reg")
+    @RequestMapping("/registration")
     ModelAndView regForm(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("regform.html");
@@ -44,7 +43,7 @@ public class CustomerController {
         return customerService.login(name, password);
     }
 
-    @PostMapping("/reg")
+    @PostMapping("/registration")
     String registration(@RequestParam String name,
                         @RequestParam String phone,
                         @RequestParam String password,

@@ -11,5 +11,8 @@ public interface CustomerDao {
 
     Boolean save (Customer customer) throws IOException;
 
+    public int getIdByName(String name) throws SQLException;
+
+
 
 }

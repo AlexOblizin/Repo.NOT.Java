@@ -15,8 +15,8 @@ public class ConnectionManager {
     public Connection getConnection() throws IOException {
         fileInputStream = new FileInputStream("src/main/resources/application.properties");
         property.load(fileInputStream);
-        Connection connection = null;
 
+        Connection connection = null;
     try {
         connection = DriverManager.getConnection
                 (property.getProperty("spring.datasource.url"),

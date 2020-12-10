@@ -7,6 +7,7 @@ import java.io.IOException;
 
 @SpringBootApplication
 public class App {
+
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
         ConnectionManager connectionManager = new ConnectionManager();
