@@ -50,20 +50,20 @@ public class TransactionDaoImpl implements TransactionDao {
     public Transaction findByIdOfTransaction(int idOfTransaction) throws SQLException {
         if (connection != null) {
             PreparedStatement preparedStatement
-                    = connection.prepareStatement("SELECT * FROM \"transaction\" WHERE ID=?");
+                    = connection.prepareStatement("SELECT * FROM \"transactions\" WHERE ID=?");
 
             preparedStatement.setInt(1, idOfTransaction);
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if (resultSet.next()) {
 
-                int customerId = resultSet.getInt("customerId");
-                int tyresId = resultSet.getInt("tyresId");
+                int customerId = resultSet.getInt("customerid");
+                int tyresId = resultSet.getInt("tyresid");
                 int quantity = resultSet.getInt("quantity");
                 boolean installation = resultSet.getBoolean("installation");
                 int sum = resultSet.getInt("sum");
 
-                return new Transaction(customerId, tyresId, quantity, installation, sum);
+                return new Transaction(idOfTransaction, customerId, tyresId, quantity, installation, sum);
             }
 
         }

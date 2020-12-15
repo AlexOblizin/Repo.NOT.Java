@@ -13,4 +13,7 @@ public interface TyresService {
     String insertTyres (Tyres tyres) throws IOException, SQLException;
 
     String getAllTyres (List<Tyres> list) throws IOException,SQLException;
+
+
+
 }

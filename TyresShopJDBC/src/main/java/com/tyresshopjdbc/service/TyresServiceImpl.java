@@ -28,12 +28,12 @@ public class TyresServiceImpl implements TyresService{
 
         if (findTyres != null) {
             if (id == findTyres.getId()) {
-                return "Ok! Tyres params are: " + id + " "
-                        + findTyres.getModel() + " "
-                        + findTyres.getHeigth() + " "
-                        + findTyres.getWidth() + " "
-                        + findTyres.getRadius() + " "
-                        + findTyres.getType() + " "
+                return "Ok! Tyres params are: ID: " + id + " model: "
+                        + findTyres.getModel() + " heigth: "
+                        + findTyres.getHeigth() + " width: "
+                        + findTyres.getWidth() + " radius: "
+                        + findTyres.getRadius() + " type: "
+                        + findTyres.getType() + " price: "
                         + findTyres.getPrice();
             }
 

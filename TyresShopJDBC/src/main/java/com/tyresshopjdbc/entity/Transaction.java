@@ -1,10 +1,12 @@
 package com.tyresshopjdbc.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Transaction {
     private int id;
     private int customerId;
