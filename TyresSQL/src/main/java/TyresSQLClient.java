@@ -8,9 +8,9 @@ public class TyresSQLClient {
     try {
         Input.createTables();
 
-        Input.fulfillCustomers("Alexey", "+79877897887", "sss",15);
-        Input.fulfillCustomers("Irina", "+79502581779", "sss",5);
-        Input.fulfillCustomers("Sergey", "+79264561937", "sss",7);
+        Input.fulfillCustomers("Alexey", "+79877897887", "9f6e6800cfae7749eb6c486619254b9c",15);
+        Input.fulfillCustomers("Irina", "+79502581779", "9f6e6800cfae7749eb6c486619254b9c",5);
+        Input.fulfillCustomers("Sergey", "+79264561937", "9f6e6800cfae7749eb6c486619254b9c",7);
 
         Input.fulfillTyres(75, 275, 21, "NOKIAN", "all seasons", 75000);
         Input.fulfillTyres(55, 230, 16, "BRIDGESTONE", "winter", 50000);

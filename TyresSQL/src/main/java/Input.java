@@ -24,7 +24,7 @@ public class Input {
                 "discount INTEGER NOT NULL); " +
 
                 "CREATE TABLE \"tyres\" " +
-                "(id SERIAL PRIMARY KEY, " +
+                "(id SERIAL PRIMARY KEY NOT NULL, " +
                 "heigth INTEGER NOT NULL, " +
                 "width INTEGER NOT NULL, " +
                 "radius INTEGER NOT NULL, " +
