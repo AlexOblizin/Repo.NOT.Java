@@ -89,7 +89,7 @@ public class TransactionDaoImpl implements TransactionDao {
                 pr.setInt(2, transaction.getCustomerId());
                 pr.setInt(3, transaction.getTyresId());
                 pr.setInt(4, transaction.getQuantity());
-                pr.setBoolean(5, transaction.getInstallation());
+                pr.setBoolean(5, transaction.isInstallation());
                 pr.setInt(6, transaction.getSum());
 
 

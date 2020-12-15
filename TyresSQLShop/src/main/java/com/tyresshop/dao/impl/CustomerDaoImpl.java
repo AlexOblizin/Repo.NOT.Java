@@ -70,7 +70,8 @@ public class CustomerDaoImpl implements CustomerDao {
         Connection con = cm.getConnection();
         if (con != null) {
             try {
-                PreparedStatement pr = con.prepareStatement("INSERT INTO \"Customers\" (NAME,PHONE,PASSWORD,DISCOUNT) VALUES (?,?,?,?)");
+                PreparedStatement pr
+                        = con.prepareStatement("INSERT INTO \"Customers\" (NAME,PHONE,PASSWORD,DISCOUNT) VALUES (?,?,?,?)");
                 pr.setString(1, customer.getName());
                 pr.setString(2, customer.getPhone());
                 pr.setString(3, DigestUtils.md5DigestAsHex((customer.getPassword()).getBytes()));

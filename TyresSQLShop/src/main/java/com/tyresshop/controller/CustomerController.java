@@ -50,6 +50,7 @@ public class CustomerController {
         customer.setName(name);
         customer.setPhone(phone);
         customer.setPassword(password);
+
         return customerService.registration(customer);
     }
 
