@@ -21,7 +21,7 @@ public class TransactionDaoImpl implements TransactionDao {
 
 
     @Override
-    public List<Transaction> listOfCustomersIds(int customerIdentificator) throws SQLException {
+    public List<Transaction> listOfCustomersTransactions(int customerIdentificator) throws SQLException {
         List<Transaction> result = new ArrayList<>();
         if (connection != null) {
             PreparedStatement preparedStatement =
@@ -31,17 +31,15 @@ public class TransactionDaoImpl implements TransactionDao {
 
             while (resultSet.next()) {
 
-                int customerId = resultSet.getInt("customerId");
+                int transactionId = resultSet.getInt("transactionId");
                 int tyresId = resultSet.getInt("tyresId");
                 int quantity = resultSet.getInt("quantity");
                 boolean installation = resultSet.getBoolean("installation");
                 int sum = resultSet.getInt("sum");
 
-                Transaction transaction = new Transaction(customerId, tyresId, quantity, installation, sum);
+                Transaction transaction = new Transaction(transactionId, tyresId, quantity, installation, sum);
                 result.add(transaction);
             }
-            preparedStatement.close();
-            connection.close();
 
         }
 
@@ -52,7 +50,7 @@ public class TransactionDaoImpl implements TransactionDao {
     public Transaction findByIdOfTransaction(int idOfTransaction) throws SQLException {
         if (connection != null) {
             PreparedStatement preparedStatement
-                    = connection.prepareStatement("SELECT * FROM \"transaction\" WHERE CUSTOMERID=?");
+                    = connection.prepareStatement("SELECT * FROM \"transaction\" WHERE ID=?");
 
             preparedStatement.setInt(1, idOfTransaction);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -90,8 +88,7 @@ public class TransactionDaoImpl implements TransactionDao {
                 preparedStatement.setInt(5, transaction.getSum());
 
                 preparedStatement.executeUpdate();
-                preparedStatement.close();
-                connection.close();
+
                 return true;
 
             } catch (SQLException sqlExc) {

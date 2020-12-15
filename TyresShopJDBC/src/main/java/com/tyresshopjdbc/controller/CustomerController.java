@@ -49,7 +49,9 @@ public class CustomerController {
                         @RequestParam String password,
                         @RequestParam int discount) throws IOException, SQLException {
 
-        Customer customer = new Customer(name, phone, password, discount);
+        Customer customer = new Customer();
+
+//        Customer customer = new Customer(name, phone, password, discount);
 
         customer.setName(name);
         customer.setPhone(phone);

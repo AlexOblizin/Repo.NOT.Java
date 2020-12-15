@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TransactionDao {
 
-    List<Transaction> listOfCustomersIds(int customerIdentificator) throws SQLException;
+    List<Transaction> listOfCustomersTransactions(int customerIdentificator) throws SQLException;
 
     Transaction findByIdOfTransaction(int idOfTransaction) throws SQLException;
 

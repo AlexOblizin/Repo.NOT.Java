@@ -1,8 +1,12 @@
 package com.tyresshopjdbc.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Tyres {
 
     private int id;
@@ -14,9 +18,6 @@ public class Tyres {
     private int price;
 
 
-    public Tyres() {
-    }
-
     public Tyres(int heigth, int width, int radius, String model, String type, int price) {
         this.heigth = heigth;
         this.width = width;
@@ -25,4 +26,11 @@ public class Tyres {
         this.type = type;
         this.price = price;
     }
+
+//    public String toString()
+//    {
+//        return id + " - " + model + " - " + heigth + " - " +
+//               width + " - " + radius + " - " +
+//               type + " - " + price;
+//    }
 }

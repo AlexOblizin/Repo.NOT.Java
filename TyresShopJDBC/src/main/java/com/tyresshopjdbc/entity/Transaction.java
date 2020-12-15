@@ -1,8 +1,10 @@
 package com.tyresshopjdbc.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Transaction {
     private int id;
     private int customerId;
@@ -11,9 +13,6 @@ public class Transaction {
     private boolean installation;
     private int sum;
 
-
-    public Transaction() {
-    }
 
     public Transaction(int customerId, int tyresId, int quantity, boolean installation, int sum) {
         this.customerId = customerId;

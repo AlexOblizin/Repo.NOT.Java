@@ -1,8 +1,10 @@
 package com.tyresshopjdbc.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 public class Customer {
 
     private int id;
@@ -11,9 +13,6 @@ public class Customer {
     private String password;
     private int discount;
 
-    public Customer(){
-
-    }
 
     public Customer(String name, String phone, String password, int discount) {
         this.name = name;
