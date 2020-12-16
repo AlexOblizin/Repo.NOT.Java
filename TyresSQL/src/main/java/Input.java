@@ -39,8 +39,8 @@ public class Input {
                 "quantity INTEGER NOT NULL, " +
                 "installation BOOLEAN DEFAULT FALSE, " +
                 "sum INTEGER NOT NULL, " +
-                "FOREIGN KEY (customerId) REFERENCES \"customers\" (id), " +
-                "FOREIGN KEY (tyresId) REFERENCES \"tyres\" (id));";
+                "FOREIGN KEY (customerId) REFERENCES \"customers\" (id) ON DELETE CASCADE ON UPDATE CASCADE, " +
+                "FOREIGN KEY (tyresId) REFERENCES \"tyres\" (id) ON DELETE CASCADE ON UPDATE CASCADE);";
 
         statement.executeUpdate(sql);
         connection.commit();
