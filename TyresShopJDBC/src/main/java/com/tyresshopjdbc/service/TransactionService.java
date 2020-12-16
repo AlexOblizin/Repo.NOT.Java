@@ -7,7 +7,10 @@ import java.sql.SQLException;
 
 public interface TransactionService {
 
-    public String findTransactionById (int id) throws SQLException;
+    String findTransactionById (int id) throws SQLException;
 
-    public String registration (Transaction transaction) throws IOException, SQLException;
+    String registration (Transaction transaction) throws IOException, SQLException;
+
+    String getAllTransactions () throws IOException, SQLException;
+
 }

@@ -64,10 +64,10 @@ public class TyresController {
 
     }
 
-    @RequestMapping("/alltyres")
+    @RequestMapping("/getalltyres")
     ModelAndView allTyresForm() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("tyres.html");
+        modelAndView.setViewName("getalltyres.html");
 
         return modelAndView;
     }
@@ -75,10 +75,11 @@ public class TyresController {
 
 
 
-//    @PostMapping("/alltyres")
-//    String getAll (){
-//
-//    }
+    @PostMapping("/getalltyres")
+    String getAll () throws IOException, SQLException {
+        return tyresService.getAllTyres();
+
+    }
 
 
 }

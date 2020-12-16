@@ -58,7 +58,7 @@ public class TyresDaoImpl implements TyresDao {
         List<Tyres> tyresList = new ArrayList<>();
         if (connection != null) {
             PreparedStatement preparedStatement =
-                    connection.prepareStatement("SELECT * FROM \"tyres\"");
+                    connection.prepareStatement("SELECT * FROM \"tyres\";");
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {

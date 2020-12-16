@@ -14,4 +14,6 @@ public interface TransactionDao {
 
     Boolean save (Transaction transaction) throws IOException;
 
+    List<Transaction> getAll() throws SQLException;
+
 }

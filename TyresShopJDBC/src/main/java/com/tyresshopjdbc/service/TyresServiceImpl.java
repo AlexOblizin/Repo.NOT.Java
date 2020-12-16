@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TyresServiceImpl implements TyresService{
+public class TyresServiceImpl implements TyresService {
 
 
     TyresDao tyresDao = new TyresDaoImpl();
@@ -28,7 +28,7 @@ public class TyresServiceImpl implements TyresService{
 
         if (findTyres != null) {
             if (id == findTyres.getId()) {
-                return "Ok! Tyres params are: ID: " + id + " model: "
+                return "Ok! Tyres params are --- ID: " + id + " model: "
                         + findTyres.getModel() + " heigth: "
                         + findTyres.getHeigth() + " width: "
                         + findTyres.getWidth() + " radius: "
@@ -45,7 +45,7 @@ public class TyresServiceImpl implements TyresService{
     @Override
     public String insertTyres(Tyres tyres) throws IOException, SQLException {
         Tyres newTyres = tyresDao.findByIdTyres(tyres.getId());
-        if(newTyres == null) {
+        if (newTyres == null) {
             tyresDao.saveTyres(tyres);
             return "Fine!";
         }
@@ -55,10 +55,23 @@ public class TyresServiceImpl implements TyresService{
     }
 
     @Override
-    public String getAllTyres(List<Tyres> list) throws IOException, SQLException{
-    List<Tyres> tyresList = new ArrayList<>();
-    tyresList.addAll(list);
+    public String getAllTyres() throws IOException, SQLException {
+        TyresDao tyresDao = new TyresDaoImpl();
 
-        return null;
+
+        List<Tyres> tyresList = tyresDao.getAll();
+        String result = "";
+
+        for (Tyres tyres : tyresList) {
+            result += "  next model:  ";
+            result += tyres.getModel() + " heigth: "
+                    + tyres.getHeigth() + " width: "
+                    + tyres.getWidth() + " radius: "
+                    + tyres.getRadius() + " type: "
+                    + tyres.getType() + " price: "
+                    + tyres.getPrice();
+        }
+
+        return result;
     }
 }

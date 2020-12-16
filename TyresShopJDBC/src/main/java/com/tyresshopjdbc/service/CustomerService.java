@@ -7,9 +7,14 @@ import java.sql.SQLException;
 
 public interface CustomerService {
 
-public String login (String login, String password) throws SQLException;
+    String login(String login, String password) throws SQLException;
 
-public String registration (Customer customer) throws IOException, SQLException;
+    String registration(Customer customer) throws IOException, SQLException;
 
+    String deleteCustomer(String name) throws IOException, SQLException;
+
+    String editCustomer(int id, String name, String phone, String password, int discount) throws IOException, SQLException;
+
+    String getAllCustomers() throws SQLException, IOException;
 
 }

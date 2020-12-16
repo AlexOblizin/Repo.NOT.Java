@@ -34,4 +34,20 @@ public class TransactionController {
         return transactionService.findTransactionById(id);
 
     }
+
+    @RequestMapping("/getalltrn")
+    ModelAndView findAllTransactionsForm() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("alltransactions.html");
+
+        return modelAndView;
+    }
+
+    @PostMapping("/getalltrn")
+    String getAllTransactions () throws SQLException, IOException {
+
+        return transactionService.getAllTransactions();
+
+    }
+
 }

@@ -1,13 +1,17 @@
 package com.tyresshopjdbc.service;
 
 import com.tyresshopjdbc.dao.TransactionDao;
+import com.tyresshopjdbc.dao.TyresDao;
 import com.tyresshopjdbc.dao.impl.TransactionDaoImpl;
+import com.tyresshopjdbc.dao.impl.TyresDaoImpl;
 import com.tyresshopjdbc.entity.Transaction;
+import com.tyresshopjdbc.entity.Tyres;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
-public class TransactionServiceImpl implements TransactionService{
+public class TransactionServiceImpl implements TransactionService {
 
     TransactionDao transactionDao = new TransactionDaoImpl();
 
@@ -40,5 +44,26 @@ public class TransactionServiceImpl implements TransactionService{
     @Override
     public String registration(Transaction transaction) throws IOException, SQLException {
         return null;
+    }
+
+    @Override
+    public String getAllTransactions() throws IOException, SQLException {
+        TransactionDao transactionDao = new TransactionDaoImpl();
+
+
+        List<Transaction> transactionAll = transactionDao.getAll();
+        String result = "";
+
+        for (Transaction transaction : transactionAll) {
+            result += "  next transaction (ID):  ";
+            result += transaction.getId() + " customerID: "
+                    + transaction.getCustomerId() + " tyresID: "
+                    + transaction.getTyresId() + " quantity: "
+                    + transaction.getQuantity() + " installation: "
+                    + transaction.isInstallation() + " sum: "
+                    + transaction.getSum();
+        }
+
+        return result;
     }
 }

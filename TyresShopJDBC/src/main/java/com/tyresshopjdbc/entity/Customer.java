@@ -21,4 +21,10 @@ public class Customer {
         this.discount = discount;
     }
 
+    public Customer(int id, String name, String phone, int discount) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.discount = discount;
+    }
 }

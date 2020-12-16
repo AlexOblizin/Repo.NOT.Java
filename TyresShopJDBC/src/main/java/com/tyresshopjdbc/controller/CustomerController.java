@@ -28,19 +28,19 @@ public class CustomerController {
         return modelAndView;
     }
 
-    @RequestMapping("/registration")
-    ModelAndView regForm(){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("regform.html");
-
-        return modelAndView;
-    }
-
     @PostMapping("/login")
     String login(@RequestParam String name,
                  @RequestParam String password) throws SQLException {
 
         return customerService.login(name, password);
+    }
+
+    @RequestMapping("/registration")
+    ModelAndView regForm() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("regform.html");
+
+        return modelAndView;
     }
 
     @PostMapping("/registration")
@@ -51,8 +51,6 @@ public class CustomerController {
 
         Customer customer = new Customer();
 
-//        Customer customer = new Customer(name, phone, password, discount);
-
         customer.setName(name);
         customer.setPhone(phone);
         customer.setPassword(password);
@@ -60,6 +58,54 @@ public class CustomerController {
 
         return customerService.registration(customer);
 
+    }
+
+    @RequestMapping("/delcustomer")
+    ModelAndView delForm() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("delcustomer.html");
+
+        return modelAndView;
+    }
+
+    @PostMapping("/delcustomer")
+    String deleteCustomer(@RequestParam String name) throws SQLException, IOException {
+
+        return customerService.deleteCustomer(name);
+
+    }
+
+    @RequestMapping("/editcustomer")
+    ModelAndView editCustomerForm() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("editcustomer.html");
+
+        return modelAndView;
+    }
+
+    @PostMapping("/editcustomer")
+    String editCustomer(@RequestParam int id,
+                        @RequestParam String name,
+                        @RequestParam String phone,
+                        @RequestParam String password,
+                        @RequestParam int discount) throws SQLException, IOException {
+
+        return customerService.editCustomer(id, name, phone, password, discount);
+
+    }
+
+    @RequestMapping("/allcustomers")
+    ModelAndView allCustomersForm() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("allcustomers.html");
+
+        return modelAndView;
+    }
+
+    @PostMapping("/allcustomers")
+    String allCustomers() throws SQLException, IOException {
+
+        return customerService.getAllCustomers();
     }
 
 }

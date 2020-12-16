@@ -102,4 +102,30 @@ public class TransactionDaoImpl implements TransactionDao {
 
         return false;
     }
+
+    @Override
+    public List<Transaction> getAll() throws SQLException {
+        List<Transaction> transactionList = new ArrayList<>();
+        if (connection != null) {
+            PreparedStatement preparedStatement =
+                    connection.prepareStatement("SELECT * FROM \"transactions\";");
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+
+                int id = resultSet.getInt("id");
+                int customerId = resultSet.getInt("customerid");
+                int tyresId = resultSet.getInt("tyresid");
+                int quantity = resultSet.getInt("quantity");
+                boolean installation = resultSet.getBoolean("installation");
+                int sum = resultSet.getInt("sum");
+
+                Transaction transaction = new Transaction(id, customerId, tyresId, quantity, installation, sum);
+                transactionList.add(transaction);
+            }
+
+        }
+
+        return transactionList;
+    }
 }
