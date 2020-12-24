@@ -84,4 +84,13 @@ public class CustomerServiceImpl implements CustomerService {
 
         return result;
     }
+
+
+    public List<Customer> getAllCustomers2() throws SQLException, IOException {
+        CustomerDao customerDao = new CustomerDaoImpl();
+        return customerDao.getAll();
+
+    }
+
+
 }

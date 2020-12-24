@@ -994,16 +994,19 @@ UC/10
     </sequence>
     <table id="34" parent="18" name="customers">
       <ObjectId>18857</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>1933</StateNumber>
     </table>
     <table id="35" parent="18" name="transactions">
       <ObjectId>18881</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>1933</StateNumber>
     </table>
     <table id="36" parent="18" name="tyres">
       <ObjectId>18870</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>1933</StateNumber>
     </table>

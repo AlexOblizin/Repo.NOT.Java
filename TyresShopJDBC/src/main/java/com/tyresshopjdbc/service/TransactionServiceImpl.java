@@ -1,11 +1,8 @@
 package com.tyresshopjdbc.service;
 
 import com.tyresshopjdbc.dao.TransactionDao;
-import com.tyresshopjdbc.dao.TyresDao;
 import com.tyresshopjdbc.dao.impl.TransactionDaoImpl;
-import com.tyresshopjdbc.dao.impl.TyresDaoImpl;
 import com.tyresshopjdbc.entity.Transaction;
-import com.tyresshopjdbc.entity.Tyres;
 
 import java.io.IOException;
 import java.sql.SQLException;

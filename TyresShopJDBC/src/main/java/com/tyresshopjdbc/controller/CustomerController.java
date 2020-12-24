@@ -11,9 +11,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @RestController
 public class CustomerController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(CustomerController.class);
 
     CustomerService customerService = new CustomerServiceImpl();
 
@@ -22,9 +28,12 @@ public class CustomerController {
 
     @RequestMapping("/login")
     ModelAndView loginForm() {
+
+        LOGGER.info("Login attempt");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("loginform.html");
 
+        LOGGER.debug("HTML created");
         return modelAndView;
     }
 
@@ -32,7 +41,12 @@ public class CustomerController {
     String login(@RequestParam String name,
                  @RequestParam String password) throws SQLException {
 
-        return customerService.login(name, password);
+        String result = customerService.login(name,password);
+        if("Authorization failed!".equals(result)){
+            LOGGER.warn("Warning! Authorization failed for user: " + name);
+        }
+
+        return result;
     }
 
     @RequestMapping("/registration")
@@ -106,6 +120,18 @@ public class CustomerController {
     String allCustomers() throws SQLException, IOException {
 
         return customerService.getAllCustomers();
+    }
+
+
+    @RequestMapping("/allcustomers2")
+    public String allCustomers2() throws SQLException, IOException {
+
+        return customerService.getAllCustomers();
+    }
+
+    @RequestMapping("/allcustomersjson")
+    public List<Customer> allCustomers3() throws SQLException, IOException{
+        return customerService.getAllCustomers2();
     }
 
 }

@@ -21,7 +21,7 @@ public class TyresController {
 
 
     @RequestMapping("/tyresid")
-    ModelAndView findTyresForm() {
+    public ModelAndView findTyresForm() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("findtyresbyid.html");
 
@@ -29,14 +29,14 @@ public class TyresController {
     }
 
     @PostMapping("/tyresid")
-    String findTyresById(@RequestParam int id) throws SQLException {
+    public String findTyresById(@RequestParam int id) throws SQLException {
 
         return tyresService.findTyres(id);
     }
 
 
     @RequestMapping("/regtyres")
-    ModelAndView regForm() {
+    public ModelAndView regForm() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("insertnewtyres.html");
 
@@ -44,7 +44,7 @@ public class TyresController {
     }
 
     @PostMapping("/regtyres")
-    String regTyres(@RequestParam int heigth,
+    public String regTyres(@RequestParam int heigth,
                     @RequestParam int width,
                     @RequestParam int radius,
                     @RequestParam String model,
@@ -65,7 +65,7 @@ public class TyresController {
     }
 
     @RequestMapping("/getalltyres")
-    ModelAndView allTyresForm() {
+    public ModelAndView allTyresForm() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("getalltyres.html");
 
@@ -76,7 +76,7 @@ public class TyresController {
 
 
     @PostMapping("/getalltyres")
-    String getAll () throws IOException, SQLException {
+    public String getAll () throws IOException, SQLException {
         return tyresService.getAllTyres();
 
     }

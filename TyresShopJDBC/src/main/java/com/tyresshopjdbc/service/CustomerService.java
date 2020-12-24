@@ -4,6 +4,7 @@ import com.tyresshopjdbc.entity.Customer;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 public interface CustomerService {
 
@@ -16,5 +17,7 @@ public interface CustomerService {
     String editCustomer(int id, String name, String phone, String password, int discount) throws IOException, SQLException;
 
     String getAllCustomers() throws SQLException, IOException;
+
+    List<Customer> getAllCustomers2() throws SQLException, IOException;
 
 }
