@@ -1,10 +1,9 @@
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+
 
 public class TyresSQLClient {
 
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
     try {
         Input.createTables();
 

@@ -1,0 +1,45 @@
+
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(Œ‚†î
+^
+java:S2095>"HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+b
+java:S1192*"GDefine a constant instead of duplicating this literal "mypass" 3 times.(ò¾½ıÿÿÿÿ
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(ğÛ•ãøÿÿÿÿ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(–Õ•¸
+a
+java:S11924"FDefine a constant instead of duplicating this literal "ID = " 3 times.(ğÛ•ãøÿÿÿÿ
+b
+java:S2095-"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+†
+java:S1192)"kDefine a constant instead of duplicating this literal "jdbc:postgresql://localhost:5432/TyresShop" 3 times.(†£Ä şÿÿÿÿ
+q
+java:S1192'"VDefine a constant instead of duplicating this literal "org.postgresql.Driver" 3 times.(õ†¨Äùÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ĞÎöÜÿÿÿÿÿ
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(¼úºÂ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(ğÛ•ãøÿÿÿÿ
+b
+java:S2095C"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+d
+java:S1192*"IDefine a constant instead of duplicating this literal "postgres" 3 times.(ò¾½ıÿÿÿÿ
+^
+java:S2095("HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(÷á­ûÿÿÿÿ
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(ÂûÊ¹úÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ğÛ•ãøÿÿÿÿ
+M	java:S106T"9Replace this use of System.out or System.err by a logger.(äù–
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(Ã¥ª
+b
+java:S2095`"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(¨‰ôĞ
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(İë·‘
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(åÅÉşÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ªÙàúÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ï‰Ü
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(Ëù±öıÿÿÿÿ
+^
+java:S2095["HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(ƒúèÿÿÿÿÿ

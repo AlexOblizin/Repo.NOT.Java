@@ -1,0 +1,11 @@
+
+0
+java:S1643"Use a StringBuilder instead.(ƒñúù
+C
+java:S1066"/Merge this if statement with the enclosing one.(†š¸€
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ä‚ÚÓ
+V
+java:S1117"BRename "transactionDao" which hides the field declared at line 13.(˜Ëşö
+5
+java:S1643"Use a StringBuilder instead.(Ü‹ûùÿÿÿÿ

@@ -1,0 +1,13 @@
+
+R
+java:S1117"?Rename "customerDao" which hides the field declared at line 13.(±ğ«6
+•
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÑÜ–í
+_
+java:S1192"FDefine a constant instead of duplicating this literal "Fine!" 3 times.(Ùüúÿÿÿÿ
+5
+java:S1643"Use a StringBuilder instead.(¥ÙÕøÿÿÿÿ
+R
+java:S1117"?Rename "customerDao" which hides the field declared at line 13.(±ğ«6
+0
+java:S1643"Use a StringBuilder instead.(Ùîš†

@@ -1,0 +1,32 @@
+
+b
+java:S2095]"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+^
+java:S20954"HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¾ìÆ”üÿÿÿÿ
+R	java:S125Š"<This block of commented-out lines of code should be removed.(¥ý¤¿
+†
+java:S1192"kDefine a constant instead of duplicating this literal "jdbc:postgresql://localhost:5432/TyresShop" 4 times.(†£Ä þÿÿÿÿ
+b
+java:S20959"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+b
+java:S2095I"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+^
+java:S2095X"HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+}
+java:S1192"bDefine a constant instead of duplicating this literal "(id SERIAL PRIMARY KEY NOT NULL, " 3 times.(žÛ¼þÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÚãÙ‰
+^
+java:S2095D"HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+q
+java:S1192"VDefine a constant instead of duplicating this literal "org.postgresql.Driver" 4 times.(õ†¨Äùÿÿÿÿ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "postgres" 4 times.(ò¾½ýÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+^
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(áñšì
+b
+java:S1192"GDefine a constant instead of duplicating this literal "mypass" 4 times.(ò¾½ýÿÿÿÿ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(Ï´Ôšýÿÿÿÿ

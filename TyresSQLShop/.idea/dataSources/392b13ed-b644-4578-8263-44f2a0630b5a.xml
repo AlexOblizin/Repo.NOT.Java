@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="postgres@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.19">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.20">
     <root id="1">
       <ServerVersion>12.4</ServerVersion>
       <DateStyle>mdy</DateStyle>
@@ -790,7 +790,6 @@ false posixrules
     <database id="2" parent="1" name="TyresShop">
       <ObjectId>16532</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1707</IntrospectionStateNumber>
       <Relations>sequence|table|18374|18376|1
 sequence|table|18387|18389|1
 sequence|table|18398|18400|1
@@ -855,65 +854,9 @@ sequence|table|18398|18400|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1708</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <access-method id="17" parent="2" name="heap">
-      <ObjectId>2</ObjectId>
-      <Comment>heap table access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.heap_tableam_handler</Handler>
-      <HandlerId>3</HandlerId>
-    </access-method>
-    <access-method id="18" parent="2" name="btree">
-      <ObjectId>403</ObjectId>
-      <Comment>b-tree index access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.bthandler</Handler>
-      <HandlerId>330</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <access-method id="19" parent="2" name="hash">
-      <ObjectId>405</ObjectId>
-      <Comment>hash index access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.hashhandler</Handler>
-      <HandlerId>331</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <access-method id="20" parent="2" name="gist">
-      <ObjectId>783</ObjectId>
-      <Comment>GiST index access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.gisthandler</Handler>
-      <HandlerId>332</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <access-method id="21" parent="2" name="gin">
-      <ObjectId>2742</ObjectId>
-      <Comment>GIN index access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.ginhandler</Handler>
-      <HandlerId>333</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <access-method id="22" parent="2" name="spgist">
-      <ObjectId>4000</ObjectId>
-      <Comment>SP-GiST index access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.spghandler</Handler>
-      <HandlerId>334</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <access-method id="23" parent="2" name="brin">
-      <ObjectId>3580</ObjectId>
-      <Comment>block range index (BRIN) access method</Comment>
-      <StateNumber>1</StateNumber>
-      <Handler>pg_catalog.brinhandler</Handler>
-      <HandlerId>335</HandlerId>
-      <Type>index</Type>
-    </access-method>
-    <extension id="24" parent="2" name="plpgsql">
+    <extension id="17" parent="2" name="plpgsql">
       <ObjectId>13304</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>437</StateNumber>
@@ -921,10 +864,65 @@ sequence|table|18398|18400|1
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <language id="25" parent="2" name="c"/>
-    <language id="26" parent="2" name="internal"/>
-    <language id="27" parent="2" name="plpgsql"/>
-    <language id="28" parent="2" name="sql"/>
+    <language id="18" parent="2" name="c"/>
+    <language id="19" parent="2" name="internal"/>
+    <language id="20" parent="2" name="plpgsql"/>
+    <language id="21" parent="2" name="sql"/>
+    <access-method id="22" parent="2" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="23" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="27" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="28" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
     <sequence id="29" parent="16" name="customers_id_seq">
       <ObjectId>18374</ObjectId>
       <Owner>postgres</Owner>
@@ -945,6 +943,7 @@ sequence|table|18398|18400|1
     </sequence>
     <table id="32" parent="16" name="customers">
       <ObjectId>18376</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>1690</StateNumber>
     </table>

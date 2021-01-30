@@ -20,11 +20,7 @@ public class TyresController {
 
     private final TyresService tyresService;
 
-    // CRUD
-    // REST API - HTTP: GET, POST, PUT, DELETE
-    // URL - www.yandex.ru
 
-    // GET localhost:8080/tyres/1
 
     public TyresController(TyresService tyresService) {
         this.tyresService = tyresService;
@@ -43,9 +39,6 @@ public class TyresController {
 
 
 
-
-
-
     @RequestMapping("/findtyres")
     ModelAndView loginForm() {
         ModelAndView modelAndView = new ModelAndView();
@@ -60,29 +53,10 @@ public class TyresController {
         return modelAndView;
     }
 
-    @PostMapping("/findtyres")
-    String findTyres(@RequestParam int id) throws SQLException {
-
-        return tyresService.findTyres(id);
-    }
-
-    @PostMapping("/regtyres")
-    String putIntoBase(@RequestParam int heigth,
-                       @RequestParam int width,
-                       @RequestParam int radius,
-                       @RequestParam String model,
-                       @RequestParam String type,
-                       @RequestParam int price) throws IOException, SQLException {
-
-        Tyres tyres = new Tyres(heigth, width, radius, model, type, price);
-        tyres.setHeigth(heigth);
-        tyres.setWidth(width);
-        tyres.setRadius(radius);
-        tyres.setModel(model);
-        tyres.setType(type);
-        tyres.setPrice(price);
-        return tyresService.putIntoBase(tyres);
-    }
 
 }
 
+// CRUD
+// REST API - HTTP: GET, POST, PUT, DELETE
+
+// GET localhost:8080/tyres/1

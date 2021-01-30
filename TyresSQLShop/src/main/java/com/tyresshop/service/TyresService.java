@@ -9,13 +9,12 @@ import java.util.List;
 
 public interface TyresService {
 
-    String findTyres(int id) throws SQLException;
 
     List<Tyres> getAll();
 
     Tyres getById(Integer id);
 
 
-    String putIntoBase(Tyres tyres) throws IOException, SQLException;
+    Tyres putIntoBase(Tyres tyres);
 
 }
